@@ -17,6 +17,7 @@ alias ls		ls -G
 alias mc		mc -b
 alias config		git --git-dir=$HOME/.myconf/ --work-tree=$HOME
 alias config_show 	config ls-tree -r master --name-only
+alias config_history	config log --name-only --oneline
 # для системных конфигов тоже самое сделать под рутом, тут прописать корень  --work-tree=/'
 # только конфиги пользователя не трогать, только системные!!!!
 
