@@ -1,0 +1,58 @@
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+alt + Tab
+	bspc node focused -f next.local
+
+super + Tab
+	bspc node focused -f prev.local
+
+super + c
+	bspc node focused --close
+
+super + k
+	bspc node focused --kill
+
+super + q
+	bspc quit
+
+super + {s,f}
+	bspc desktop -l {tiled,monocle}
+
+super + Return
+	urxvt
+
+super + l
+	xtrlock -b
+
+super + b
+	firefox
+
+alt + b
+	chrome
+
+ctrl + e
+	vimb
+
+alt + x
+	thunderbird
+
+super + p
+	printscreen
+	
+# make sxhkd reload its configuration files
+super + r
+	pkill -USR1 -x sxhkd
+
+super + F4
+	shutdown -p now
+
+Menu
+	rofi -show window
+
+ctrl + grave
+	rofi -show run
+
+super + w
+	urxvt -e tmux -2 new-session -A -s local
