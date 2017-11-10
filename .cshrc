@@ -8,14 +8,15 @@ set history = 4000
 set savehist = 4000
 
 #alias h		history 100
-alias h		'history | fzf' 
-alias j		jobs -l
-alias la	ls -a
-alias lf	ls -FA
-alias ll	ls -lA
-alias ls	ls -G
-alias mc	mc -b
-alias config	'git --git-dir=$HOME/.myconf/ --work-tree=$HOME' 
+alias h			'history | fzf'
+alias j			jobs -l
+alias la		ls -a
+alias lf		ls -FA
+alias ll		ls -lA
+alias ls		ls -G
+alias mc		mc -b
+alias config		git --git-dir=$HOME/.myconf/ --work-tree=$HOME
+alias config_show 	config ls-tree -r master --name-only
 # для системных конфигов тоже самое сделать под рутом, тут прописать корень  --work-tree=/'
 # только конфиги пользователя не трогать, только системные!!!!
 
@@ -25,6 +26,7 @@ umask 22
 set path = (/sbin /bin /usr/sbin /usr/bin /usr/games /usr/local/sbin /usr/local/bin $HOME/bin)
 
 setenv  FZF_DEFAULT_COMMAND 'ag --nocolor -l -g ""'
+setenv  FZF_DEFAULT_OPTS '--exact'
 setenv	CLICOLOR true
 setenv	EDITOR	vi
 setenv	PAGER	less
