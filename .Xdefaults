@@ -1,0 +1,62 @@
+URxvt*termName: rxvt-unicode-256color
+!URxvt*termName: xterm-256color
+URxvt*internalBorder: 0
+URxvt*externalBorder: 0
+URxvt*scrollBar: false
+!URxvt*borderLess: true
+URxvt*depth: 32
+URxvt*buffered: true
+URxvt*font: xft:DroidSansMonoForPowerline:size=12,xft:M+ 2m:size=12
+URxvt*boldFont: xft:DroidSansMonoForPowerline:size=12,xft:M+ 2m:size=12
+URxvt*lineSpace: 0
+URxvt*letterSpace: 0
+!URxvt*font: xft:PowerlineConsolas:pixelsize=16:antialias=true:hinting=true
+!URxvt*boldFont: xft:PowerlineConsolas:bold:pixelsize=16:antialias=true:hinting=true
+URxvt*loginShell: true
+URxvt*perl-ext:
+URxvt*perl-ext-common:
+
+
+urxvt*transparent: true
+urxvt*shading: 30
+
+
+Xft*dpi: 96
+Xft*antialias: true
+Xft*hinting: true
+Xft*hintstyle: hintslight
+
+XTerm*renderFont: true
+XTerm*faceName: DroidSansMonoForPowerline
+XTerm*faceSize: 12
+
+*.foreground:   #c0c0c0
+*.background:   #000000
+*.cursorColor:  #e0e0e0
+
+*.color0:       #000000
+!red:
+*.color1:       #b92222
+*.color2:       #47aa06
+*.color3:       #ce882f
+! blue? for color Folders  #1f46a1
+*.color4:       #f0c674
+*.color5:       #85478f
+*.color6:       #3e918b
+*.color7:       #c0c0c0
+
+*.color8:       #505050
+*.color9:       #e93232
+*.color10:      #72ea26
+*.color11:      #eeb32f
+*.color12:      #4f71e9
+*.color13:      #b557bf
+*.color14:      #3ec1bb
+*.color15:      #f6f6f6
+
+!*.color16:      #dc9656
+!*.color17:      #a16946
+!*.color18:      #282828
+!*.color19:      #383838
+!*.color20:      #b8b8b8
+!*.color21:      #e8e8e8
