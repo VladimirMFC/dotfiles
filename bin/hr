@@ -1,0 +1,5 @@
+#!/bin/csh
+set c = `history | fzf | awk '{ for(i=3;i <= NF;i++) {printf "%s ",$i} }'`
+printf "$c" | xclip
+	
+echo "   Sel command => $c"
