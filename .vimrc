@@ -31,6 +31,8 @@ filetype plugin indent on
 
 set shell=/bin/sh
 
+let g:jellybeans_overrides = { 'background': { 'ctermbg': 'none', '256ctermbg': 'none' }, }
+
 "nmap <C-o> :tabnew<cr>
 "nmap <C-tab> :tabnext<cr>
 
